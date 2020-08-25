@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  web:
+    build:
+      context: ../../hosmart
+      dockerfile: docker/prod.dockerfile
+    ports:
+      - "9358:80"
+    environment:
+      - NODE_ENV=production
