@@ -24,10 +24,9 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start:dev": "react-scripts start",
-    "build:dev": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "prod:up": "docker-compose -f ./docker/docker-compose.prod.yml up --build -V -d",
-    "build": "yarn run prod:up",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
