@@ -5,6 +5,6 @@ services:
       context: ../
       dockerfile: docker/prod.dockerfile
     ports:
-      - "9358:80"
+      - "${PORT}:80"
     environment:
       - NODE_ENV=production
